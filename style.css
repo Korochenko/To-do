@@ -253,22 +253,30 @@ ul li span:hover {
 @media (max-width: 400px) {
   .row {
     flex-direction: column;
+    /* Ставимо елементи в колонку */
     align-items: center;
+    /* Центруємо по горизонталі */
+    position: relative;
+  }
+
+  input {
+    width: 800%;
+    /* Обмежуємо ширину інпуту */
+    margin-bottom: 15px;
+    /* Додаємо відступ між інпутом і кнопкою */
   }
 
   button {
     width: 50%;
+    /* Кнопка займає всю ширину */
+    max-width: 400px;
+    /* Максимальна ширина кнопки, щоб вона не була надто великою */
     margin-left: 0;
-    margin-top: 20px;
-  }
-
-  input {
-    flex-grow: 1;
-    border: none;
-    outline: none;
-    background: #fff;
-    padding: 10px;
-    width: 100%;
+    /* Прибираємо лівий відступ */
+    margin-top: 10px;
+    /* Відступ зверху */
+    clear: both;
+    /* Перекриває можливе накладання */
   }
 
   .shadow {
