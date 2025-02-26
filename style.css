@@ -253,25 +253,20 @@ ul li span:hover {
 @media (max-width: 400px) {
   .row {
     flex-direction: column;
-    /* Ставимо елементи в колонку */
     align-items: center;
-    /* Центруємо по горизонталі */
   }
 
   button {
     width: 50%;
-    /* Робимо кнопку шириною 100% */
     margin-left: 0;
-    /* Прибираємо лівий відступ */
     margin-top: 20px;
-    /* Додаємо відступ зверху, щоб кнопка не була занадто близько до input */
   }
 
   input {
     flex-grow: 1;
     border: none;
     outline: none;
-    background: transparent;
+    background: #fff;
     padding: 10px;
     width: 100%;
   }
